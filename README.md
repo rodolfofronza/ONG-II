@@ -1,2 +1,1 @@
-# ONG-II
-Ong TranformaTech
+ONG TranformaTech
