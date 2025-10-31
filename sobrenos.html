@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
    <header>
-        <img src="Imagens/Logo1.jpg" alt="Logo" width="150 px">
+      <div class="container section-flex">
+        <img src="Imagens/Logo1.jpg" alt="Logo" width="100">
         <h1>ONG TransformaTech</h1>
         <nav>
-            <ul>
+            <ul class="section-flex"> 
                 <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projeto</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="sobrenos.html"class="ativo">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
 
- <main> 
+ <main class="container">
     <section>
        <h2>Quem Somos</h2>
        <p>A TransformaTech nasceu com o objetivo de democratizar o acesso à tecnologia e promover a inclusão digital.</p>
@@ -49,5 +54,17 @@
         <p>&copy; <strong> TransformaTech | contato@transformatech.org </strong></p>
  </footer>
     
+ <script>
+  const menuToggle = document.createElement('div');
+  menuToggle.classList.add('menu-toggle');
+  menuToggle.innerHTML = '&#9776;'; // Ícone do menu hambúrguer
+  document.querySelector('header').prepend(menuToggle);
+
+  const nav = document.querySelector('nav');
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

@@ -1,57 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    <title>Projetos | TransformaTech</title>
+
+    <!-- 🔗 Conexão com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-      <header>
-           <img src="Imagens/Logo1.jpg" alt="Logo" width="150 px">
-           <h1>ONG TransformaTech 2 </h1>
-          <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
-            </ul>
-          </nav>
-       </header>
+    <header>
+        <div class="container section-flex">
+            <img src="Imagens/Logo1.jpg" alt="Logo da TransformaTech" width="100">
+            <h1>ONG TransformaTech</h1>
+            <nav>
+                <ul class="section-flex">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html"class="ativo">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        
-    <main>
-    <section>
-        <h2>Nossos projetos transformam realidades</h2>
-      <article>
-        <h3>Oficinas Digitais</h3>
-        <p>Ensino de informática básica para jovens e adultos.</p>
-        <img src="Imagens/Aula de informática.jpg" alt="Aula de informática" width="350" height="250">
-      </article>
+    <main class="container">
+        <section>
+            <h2>Nossos projetos transformam realidades</h2>
 
-      <article>
-        <h3>Mulheres Conectadas</h3>
-        <p>Programa de capacitação digital voltado ao público feminino.</p>
-        <img src="Imagens/Mulheres aprendendo tecnologia.jpg" alt="Mulheres aprendendo tecnologia" width="350" height="250">
-      </article>
-        
-      <article>
-        <h3>TechRecicla</h3>
-        <p>Coleta e reaproveitamento de equipamentos usados.</p>
-        <img src="Imagens/Computadores sendo reaproveitados.jpg" alt="Computadores sendo reaproveitados" width="350" height="250">
-      </article>
-    
-      <article>
-        <h3>Doe Agora</h3>
-        <P>Sua doação ajuda a manter nossos cursos gratuitos e a distribuir computadores a quem mais precisa.</P>
-        <p>Entre em contato pelo whatsapp (11) 99999-9999</p>
-      </article>
-    </section>
+            <article>
+                <h3>Oficinas Digitais</h3>
+                <p>Ensino de informática básica para jovens e adultos, promovendo o primeiro contato com o mundo digital.</p>
+                <img src="Imagens/Aula de informática.jpg" alt="Aula de informática" width="350" height="250">
+            </article>
+        </section>
+
+        <section>
+             <article>
+                <h3>Mulheres Conectadas</h3>
+                <p>Programa de capacitação digital voltado ao público feminino, incentivando autonomia e oportunidades no mercado de tecnologia.</p>
+                <img src="Imagens/Mulheres aprendendo tecnologia.jpg" alt="Mulheres aprendendo tecnologia" width="350" height="250">
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>TechRecicla</h3>
+                <p>Projeto de coleta e reaproveitamento de equipamentos usados, reduzindo o lixo eletrônico e promovendo sustentabilidade.</p>
+                <img src="Imagens/Computadores sendo reaproveitados.jpg" alt="Computadores sendo reaproveitados" width="350" height="250">
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>Doe Agora</h3>
+                <p>Sua doação ajuda a manter nossos cursos gratuitos e a distribuir computadores a quem mais precisa.</p>
+                <p><a href="cadastro.html">Cadastro</a></p>
+                <p><strong>Contato:</strong> WhatsApp (11) 99999-9999</p>
+            </article>
+        </section>
     </main>
 
- <footer>
-        <p>&copy; <strong> TransformaTech | contato@transformatech.org </strong></p>
- </footer>
-    
+    <footer>
+        <p>&copy; <strong>TransformaTech</strong> | contato@transformatech.org</p>
+    </footer>
+
+    <script>
+  const menuToggle = document.createElement('div');
+  menuToggle.classList.add('menu-toggle');
+  menuToggle.innerHTML = '&#9776;'; // Ícone do menu hambúrguer
+  document.querySelector('header').prepend(menuToggle);
+
+  const nav = document.querySelector('nav');
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
