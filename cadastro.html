@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - TransformaTech</title>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
         <section>
             <form action="#" method="post">
                 <fieldset>
-                    <legend>Informações Pessoais</legend>
+                    <legend><h3> Informações Pessoais </h3></legend>
 
                     <label for="nome">Nome Completo:</label>
                     <input type="text" id="nome" name="nome" required>
@@ -54,7 +56,7 @@
 
         <section>
                 <fieldset>
-                    <legend>Endereço</legend>
+                    <legend><h3> Endereço </h3></legend>
 
                     <label for="cep">CEP:</label>
                     <input type="text" id="cep" name="cep" placeholder="Apenas números" required maxlength="9">
@@ -88,7 +90,7 @@
     <script>
   const menuToggle = document.createElement('div');
   menuToggle.classList.add('menu-toggle');
-  menuToggle.innerHTML = '&#9776;'; // Ícone do menu hambúrguer
+  menuToggle.innerHTML = '&#9776;'; 
   document.querySelector('header').prepend(menuToggle);
 
   const nav = document.querySelector('nav');
@@ -100,9 +102,9 @@
 <script>
   const form = document.querySelector('form');
   form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio real do formulário
+    event.preventDefault();
     alert('✅ Formulário enviado com sucesso! Obrigado por se cadastrar na TransformaTech.');
-    form.reset(); // Limpa o formulário
+    form.reset();
   });
 </script>
 

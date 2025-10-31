@@ -1,8 +1,6 @@
-/* ===========================
-   1️⃣ DESIGN SYSTEM
-=========================== */
+
 :root {
-  /* Cores */
+
   --color-primary: #006b50;
   --color-primary-light: #00412d;
   --color-secondary: #b6b6b6;
@@ -42,9 +40,7 @@ body {
   background: var(--color-neutral-light);
 }
 
-/* ===========================
-   2️⃣ CONTAINERS
-=========================== */
+/* CONTAINERS */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -66,9 +62,7 @@ section, form {
   margin: var(--space-lg) auto;
 }
 
-/* ===========================
-   3️⃣ HEADER E NAV
-=========================== */
+/* HEADER E NAV */
 header {
   background: var(--color-primary);
   color: #fff;
@@ -138,9 +132,7 @@ nav ul li ul.dropdown li a {
   cursor: pointer;
 }
 
-/* ===========================
-   4️⃣ SECTIONS
-=========================== */
+/* SECTIONS */
 main section {
   background: var(--color-neutral-lighter);
   padding: var(--space-lg);
@@ -164,9 +156,7 @@ main section img {
   max-width: 100%;
 }
 
-/* ===========================
-   5️⃣ CARDS (grid de 12 colunas aplicado aqui)
-=========================== */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -195,9 +185,7 @@ main section img {
   gap: var(--space-sm);
 }
 
-/* ===========================
-   6️⃣ FORMULÁRIOS
-=========================== */
+/* FORMULÁRIO */
 form {
   background: var(--color-neutral-lighter);
   padding: var(--space-lg);
@@ -256,9 +244,7 @@ button:hover { background: var(--color-primary-light); transform: translateY(-2p
 button:active { transform: translateY(0); }
 button:disabled { background: #ccc; cursor: not-allowed; }
 
-/* ===========================
-   7️⃣ ALERTAS E BADGES
-=========================== */
+/* ALERTAS */
 .alert {
   padding: var(--space-sm);
   border-radius: 6px;
@@ -277,9 +263,7 @@ button:disabled { background: #ccc; cursor: not-allowed; }
   color: #000;
 }
 
-/* ===========================
-   8️⃣ FOOTER
-=========================== */
+/* FOOTER */
 footer {
   text-align: center;
   padding: var(--space-md) 0;
@@ -287,9 +271,7 @@ footer {
   color: #fff;
 }
 
-/* ===========================
-   9️⃣ RESPONSIVIDADE
-=========================== */
+
 @media (max-width: 1200px) { }
 @media (max-width: 992px)  { }
 @media (max-width: 768px)  {
